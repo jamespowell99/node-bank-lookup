@@ -1,13 +1,14 @@
 const axios = require('axios');
 
 exports.lookupBank = (req, res) => {
+    const ip = 'REPLACE_ME'
     //todo validate country & routingNumber params
     const country = req.query.country;
     const routingNumber = req.query.routingNumber;
     
     console.log('checking for country ' + country + ' and routingNumber ' + routingNumber);
     
-    axios.get('http://172.31.7.153:9310/cfx/api/123456/0/banks', {
+    axios.get('http://' + ip + ':9310/cfx/api/123456/0/banks', {
         params: {
             country: country,
             query: routingNumber
