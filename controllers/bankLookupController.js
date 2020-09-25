@@ -15,7 +15,7 @@ exports.lookupBank = (req, res) => {
     })
         .then(function (response) {
             //todo check for non 200 response & handle
-            console.log('found response')
+            // console.log('got response', response)
             // console.log(response.data.content.data.rows[0]);
             const bankEntry = response.data.content.data.rows[0];
             res.json({
@@ -26,7 +26,8 @@ exports.lookupBank = (req, res) => {
             })
         })
         .catch(function (error) {
-            console.log(error);
+            console.error('got an error: ' + error);
+            res.status(500).send('error occured...check logs')
         });
     
 }
