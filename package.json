@@ -1,0 +1,23 @@
+{
+  "name": "bank-lookup",
+  "version": "1.0.0",
+  "description": "bank lookup example",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamespowell99/node-bank-lookup.git"
+  },
+  "author": "James Powell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamespowell99/node-bank-lookup/issues"
+  },
+  "homepage": "https://github.com/jamespowell99/node-bank-lookup#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "express": "^4.17.1"
+  }
+}
